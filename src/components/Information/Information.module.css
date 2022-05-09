@@ -1,0 +1,168 @@
+.information {
+    width: 100%;
+    min-width: 206px;
+    background: var(--bg-color);
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 16px;
+    /* box-shadow: 1px 1px 1px #ddd; */
+}
+
+.inforUser {
+    position: relative;
+    border-right: 1px solid #ccc;
+}
+
+.inforUser h2 {
+    color: var(--title-color);
+    font-size: 1.8rem;
+    margin-left: 28px;
+}
+
+.inforUser h3 {
+    color: var(--title-info);
+    font-weight: 500;
+    margin: 6px 0 0 30px;
+}
+
+.inforContact {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.contactList {
+    margin-left: 20px;
+    display: block;
+}
+
+.contactItem {
+    list-style: none;
+    color: var(--text-info);
+    font-size: 1.1rem;
+    padding: 10px 0;
+}
+
+.contactItem span {
+    margin-bottom: 4px;
+}
+
+.itemTitle {
+    color: var(--title-info);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: block;
+}
+
+.inforAvatar {
+    display: flex;
+}
+
+.avatar {
+    position: relative;
+}
+
+.avatarImg {
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.avatar::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 162px;
+    height: 162px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border-top: 2px solid aqua;
+    border-bottom: 2px solid blueviolet;
+    border-left: 2px solid #03f437;
+    border-right: 2px solid #FFEB3B;
+    animation: Rotate 4s linear 0s infinite;
+}
+
+.icons {
+    position: absolute;
+    display: flex;
+    margin: 16px 20px 0;
+    bottom: 0;
+}
+
+.icon {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    border-radius: 50%;
+    margin: 0 8px;
+    /* box-shadow: 2px 2px 2px #ddd; */
+    line-height: 10px;
+    background-color: #5f9aed;
+}
+
+.icon:hover {
+    background-color: aqua;
+}
+
+.iconHoverName {
+    position: absolute;
+    background: rgb(43, 32, 145);
+    font-weight: 600;
+    text-align: center;
+    min-width: 80px;
+    height: 30px;
+    color: white;
+    border-radius: 20px;
+    line-height: 30px;
+    bottom: 50%;
+    left: -42%;
+    box-shadow: 2px 4px 6px rgb(74, 106, 247);
+    display: none;
+}
+
+.iconHoverName::before {
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    content: "";
+    border-width: 14px 12px;
+    border-style: solid;
+    border-color: rgb(43, 32, 145) transparent transparent transparent;
+}
+
+.nonHidden {
+    display: block;
+    animation: FadeIn .3s forwards;
+}
+
+/* Standard syntax */
+@keyframes Rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-100%);
+    }
+}

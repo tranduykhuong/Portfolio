@@ -1,0 +1,208 @@
+:root {
+  --star-color: orange;
+  --text-color: rgb(47, 47, 47);
+  --title-color: #333;
+  --bg-color: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3));
+  --background-color: linear-gradient(to right top, #58aec3, #ccdde4);
+
+  --title-info: #808080;
+  --text-info: #444444;
+}
+
+.app {
+  padding-top: 50px;
+  background: var(--background-color);
+  position: relative;
+}
+
+.app-content {
+  z-index: 10;
+  position: relative;
+}
+
+.toggleTheme {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 500;
+}
+
+#nevar li {
+  position: absolute;
+  top: -10px;
+  animation-name: nieve, copos;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+  z-index: 50;
+}
+
+.copos {
+  color: #fff;
+  font-size: 1em;
+  position: absolute;
+  font-size: 50px;
+  list-style: none;
+}
+
+.copos.c1 {
+  font-size: 1.7em;
+  left: 30%;
+  animation-duration: 10s;
+  color: #fff;
+}
+
+.copos.c2 {
+  font-size: 1.2em;
+  left: 40%;
+  animation-duration: 8s;
+}
+
+.copos.c3 {
+  font-size: 1.1em;
+  left: 220px;
+  animation-duration: 8s;
+}
+
+.copos.c4 {
+  font-size: 1.5em;
+  left: 60%;
+  animation-duration: 6s;
+  color: #fff;
+}
+
+.copos.c5 {
+  font-size: 1em;
+  left: 70%;
+  animation-duration: 7s;
+}
+
+.copos.c6 {
+  font-size: .9em;
+  left: 80%;
+  animation-duration: 5s;
+}
+
+.copos.c7 {
+  font-size: 2em;
+  right: 90%;
+  animation-duration: 10s;
+  color: #fff;
+}
+
+.copos.c8 {
+  font-size: 1em;
+  left: 85%;
+  animation-duration: 7s;
+}
+
+@keyframes nieve {
+  from {
+    top: -100px;
+  }
+
+  to {
+    top: 1000px;
+  }
+}
+
+@keyframes copos {
+  0% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+
+  100% {
+    transform: rotate(720deg) translate(0px, 100px);
+  }
+}
+
+/* Star */
+.five-pointed-star {
+  position: absolute;
+  top: 22%;
+  right: 30%;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 80px solid transparent;
+  border-bottom: 80px solid transparent;
+  border-bottom-color: rgb(158, 147, 253);
+  transform: rotate(0deg) translateY(-50%);
+  animation: star-spin 20s linear infinite;
+}
+
+.five-pointed-star:before {
+  content: '';
+  position: absolute;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-bottom-color: inherit;
+  transform: translateX(-63%) translateY(-3%) rotate(-36deg);
+}
+
+
+.five-pointed-star:after {
+  content: '';
+  position: absolute;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-bottom-color: inherit;
+  transform: translateX(-37%) translateY(-3%) rotate(36deg);
+}
+
+@keyframes star-spin {
+  from {
+    transform: rotate(0) translateY(-50%);
+  }
+  to {
+    transform: rotate(360deg) translateY(-50%);
+  }
+}
+
+/* Sqare */
+.square {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: #3cd849a6;
+  transform: rotate(45deg);
+  top: 70%;
+  left: 30%;
+  animation: square-spin 20s infinite;
+}
+
+@keyframes square-spin {
+  from {
+    transform: rotate(0deg);
+  } 
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Circle */
+.circle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: #d6e049a6;
+  border-radius: 50%;
+  top: 45%;
+  left: 80%;
+  animation: circle-spin 15s infinite;
+}
+
+@keyframes circle-spin {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

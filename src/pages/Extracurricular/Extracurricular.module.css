@@ -1,0 +1,85 @@
+.extracurricular {
+    background: var(--bg-color);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 40px 46px 40px 30px;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--title-color);
+    position: relative;
+    margin: 24px 0;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-image: linear-gradient( 142.17deg,#059e1f 6.66%,#a7ce1c 91.48%);
+    border-radius: 20px;
+    bottom: -6px;
+    left: 0;
+}
+
+.extraItem {
+
+}
+
+.extraItem p {
+    margin: 10px 0px 30px 32px;
+    color: var(--text-color);
+    line-height: 1.4rem;
+}
+
+.imgTVTS {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.itemHeader {
+    margin-left: 10px;
+    display: flex;
+    color: var(--text-color);
+}
+
+.itemHeader h4 {
+    margin: auto 10px;
+}
+
+/* Contests */
+.contestItem {
+    color: var(--text-color);
+    margin: 0 32px;
+    padding-bottom: 16px;
+    position: relative;
+}
+
+.contestItem p {
+    line-height: 1.4rem;
+    margin-top: 10px;
+}
+
+.contestItem::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #059e1f;
+    left: -24px;
+    top: 2px;
+    border: solid 3px rgba(137, 250, 133, 0.568);
+}
+.contestItem::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #999;
+    left: -17px;
+    top: 14px;
+}

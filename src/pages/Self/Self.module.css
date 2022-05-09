@@ -1,0 +1,95 @@
+
+.self {
+    width: 100%;
+    background: var(--bg-color);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 32px;
+}
+
+.introduce {
+
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--title-color);
+    position: relative;
+    margin: 24px 0;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-image: linear-gradient( 142.17deg,#059e1f 6.66%,#a7ce1c 91.48%);
+    border-radius: 20px;
+    bottom: -6px;
+    left: 0;
+}
+
+.introContent {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 500;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.4rem;
+    padding: 10px 0;
+}
+
+.plans {
+
+}
+
+.planList {
+
+}
+
+.planItem {
+    margin: 0 32px;
+    padding-bottom: 16px;
+    position: relative;
+}
+
+.planItem:last-child {
+    padding-bottom: 0;
+}
+
+.planItem h4 {
+    color: var(--title-color);
+    font-size: 1.1rem;
+}
+
+.planItem p {
+    margin: 6px 0;
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.planItem::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #059e1f;
+    left: -24px;
+    top: 2px;
+    border: solid 3px rgba(137, 250, 133, 0.568);
+}
+.planItem::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #999;
+    left: -17px;
+    top: 14px;
+}
+
+.quetos {
+
+}

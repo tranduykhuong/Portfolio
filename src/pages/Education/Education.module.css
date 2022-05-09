@@ -1,0 +1,173 @@
+.education {
+    width: 100%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 32px;
+}
+
+.img {
+    background-color: #89FFEA;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px #333;
+    position: relative;
+}
+
+.img img {
+    width: 250px;
+    height: 250px;
+}
+
+.img h5 {
+    margin: 2px;
+    font-size: 24px;
+}
+
+.img p {
+    margin: 2px;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.school {
+    color: #0007B2;
+    background-color: #CBFFF3;
+    padding: 6px;
+    text-align: center;
+    width: 500px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px #333;
+    position: absolute;
+    top: -18px;
+    left: 200px;
+    animation: FaceIn ease 1s 0.5s forwards;
+    opacity: 0;
+}
+
+.majoy {
+    color: #0007B2;
+    background-color: #CBFFF3;
+    padding: 10px;
+    text-align: center;
+    width: 500px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px #333;
+    position: absolute;
+    top: 96px;
+    left: 230px;
+
+    animation: FaceIn ease 1s 1s forwards;
+    opacity: 0;
+}
+
+.gpa {
+    color: #0007B2;
+    background-color: #CBFFF3;
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px #333;
+    position: absolute;
+    top: 190px;
+    left: 200px;
+
+    animation: FaceIn ease 1s 1.5s forwards;
+    opacity: 0;
+}
+
+.courses {
+    position: relative;
+}
+
+.course {
+    background-color: #fff;
+    border-radius: 16px;
+    height: 90px;
+    width: 400px;
+    position: absolute;
+    font-size: 30px;
+    font-weight: 600;
+    color: #117301;
+    text-align: center;
+    border: 2px solid #0007B2;
+    box-shadow: 4px 4px 6px #333;
+    animation: FaceIn ease 1s 2s forwards;
+    opacity: 0;
+}
+.course:hover {
+    transform: translateY(-4px);
+    transition: ease .5s;
+    cursor: default;
+}
+
+.elip {
+    width: 860px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: #3C65D0;
+    margin: 40px 0 40px 200px;
+    position: relative;
+}
+
+.elipSub {
+    width: 400px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: #09C296;
+    position: absolute;
+    right: 110px;
+    top: 150px;
+    border: 2px solid rgb(32, 240, 247);
+    text-align: center;
+}
+.elipSub  p {
+    font-size: 48px;
+    font-weight: 700;
+    color: #E5EA0B;
+    margin: 0;
+    line-height: 280px;
+}
+
+.course1 {
+    top: 8px;
+    left: 20px;
+}
+
+.course2 {
+    top: 120px;
+    left: -80px;
+}
+
+.course3 {
+    top: 240px;
+    left: -120px;
+}
+
+.course4 {
+    top: 360px;
+    left: -80px;
+}
+
+.course5 {
+    top: 480px;
+    left: 20px;
+}
+
+
+@keyframes FaceIn {
+    from {
+        transform: translateY(-6px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+

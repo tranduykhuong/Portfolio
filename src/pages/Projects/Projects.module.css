@@ -1,0 +1,133 @@
+.projects {
+    background: var(--bg-color);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* box-shadow: 4px 6px 4px #aaa; */
+    padding: 40px 46px 40px 30px;
+    overflow: hidden;
+}
+
+.projects a {
+    text-decoration: none;
+}
+
+
+/* Project */
+.project {
+    position: relative;
+    max-width: 384px;
+    border-radius: 20px;
+    padding: 90px 16px 32px;
+    box-shadow: 0px 4px 3px #6a6a6a;
+    margin: 100px auto 0;
+    text-align: center;
+    /* background-color: #baf7f2; */
+}
+
+.time {
+    position: absolute;
+    font-size: 0.8rem;
+    bottom: 6px;
+    right: -12px;
+    background-color: #ea490b;
+    color: #fff;
+    width: 100px;
+    height: 22px;
+    line-height: 22px;
+    text-align: left;
+    padding: 0 10px;
+    /* box-shadow: 0px -1px 5px #e45015; */
+}
+
+.time::before {
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: 22px;
+    right: 0px;
+    border-style: solid;
+    border-width: 0 12px 16px 0px;
+    border-color: transparent transparent #ea490b transparent;
+    z-index: -1;
+}
+
+.project::before {
+    transform: translateY(-50%);
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #6d6d6d;
+    background-color: #C4C4C4;
+    bottom: 0px;
+    left: 8px;
+    display: none;
+}
+
+.project::after {
+    transform: translateY(-50%);
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #6d6d6d;
+    background-color: #C4C4C4;
+    bottom: 0px;
+    right: 8px;
+    display: none;
+}
+
+.project img {
+    position: absolute;
+    width: 354px;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #808080;
+}
+
+.project:hover img {
+    top: -88px;
+    transition: .5s ease;
+}
+
+.project p {
+    margin: 0;
+    color: var(--text-color);
+}
+
+.project h2 {
+    margin: 18px 0 8px;
+    color: #ea490b;
+    font-size: 1.2rem;
+}
+
+.project h3 {
+    color: green;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+
+/* techniqueItem */
+.techniqueList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.techniqueItem {
+    padding: 0 8px;
+    margin-right: 4px;
+    margin-bottom: 8px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #e4cb0f;
+    font-size: 0.7rem;
+    line-height: 20px;
+    color: #fff;
+}

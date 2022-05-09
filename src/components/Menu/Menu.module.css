@@ -1,0 +1,125 @@
+.menu {
+    background: var(--bg-color);
+    width: 100%;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 2px 0;
+    text-align: center;
+    top: 0;
+}
+
+.fixedMenu {
+    position: fixed;
+    animation: fixedMenu .4s forwards;
+    z-index: 5;
+}
+
+.item {
+    display: block;
+    margin: 16px auto;
+    padding-top: 8px;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    position: relative;
+    background-color: rgba(186, 247, 242, 0.7);
+    text-decoration: none;
+    overflow: hidden;
+}
+.item::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: skewX(-20deg) translateX(-110%);
+    background-image: linear-gradient(100deg,rgba(1,1,1,0) 30%,white);
+    animation: itemMenu .7s .1s forwards;
+    display: none;
+}
+.item p {
+    font-size: 0.8rem;
+    margin-top: 4px;
+    font-weight: 600;
+    color: var(--text-info);
+}
+.item:hover {
+    transition: ease .5s;
+    background: linear-gradient(to right bottom, rgba(84, 234, 245, 0.4), rgba(255, 78, 255, 0.5));
+}
+.item:hover::after {
+    display: block;
+}
+
+.item.active {
+    background-color: aqua;
+    box-shadow: inset -0.25rem -0.25rem 0.3125rem rgb(0 0 0 / 10%), inset 0.25rem 0.25rem 0.3125rem rgb(255 255 255 / 23%);
+    animation: example 4s infinite;
+}
+
+.itemHoverName {
+    position: absolute;
+    background-color: khaki;
+    font-weight: 600;
+    width: 120px;
+    height: 30px;
+    color: rgb(226, 43, 144);
+    border-radius: 5px;
+    line-height: 30px;
+    left: 130px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.itemHoverName::before {
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    content: "";
+    border-width: 14px 12px;
+    border-style: solid;
+    border-color: transparent khaki transparent transparent;
+}
+
+.nonHidden {
+    display: block;
+}
+
+@keyframes example {
+    0% {
+        background: linear-gradient(to right bottom, rgb(111, 245, 84), rgba(255, 78, 255, 0.8));
+    }
+
+    25% {
+        background: linear-gradient(to right bottom, rgba(255, 78, 255, 0.8), rgb(189, 248, 79));
+    }
+
+    50% {
+        background: linear-gradient(to right bottom, rgb(189, 248, 79), rgb(84, 234, 245));
+    }
+
+    100% {
+        background: linear-gradient(to right bottom, rgb(84, 234, 245), rgba(255, 78, 255, 0.8));
+    }
+}
+
+@keyframes fixedMenu {
+    from {
+
+    }
+    to {
+        margin-top: 20px;
+    }
+}
+
+@keyframes itemMenu {
+    from {
+
+    }
+    to {
+        transform: skewX(-20deg) translateX(110%);
+    }
+}

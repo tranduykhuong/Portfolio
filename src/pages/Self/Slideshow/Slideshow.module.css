@@ -1,0 +1,99 @@
+  /* Slideshow container */
+  .slideshowContainer {
+      min-width: 200px;
+      width: 100%;
+      position: relative;
+      margin: auto;
+      overflow: hidden;
+      background: linear-gradient(to right top, rgb(114, 197, 19), rgb(38, 205, 247));
+      border-radius: 25px;
+  }
+
+  .slideshowMain {
+      display: flex;
+      transition: transform 500ms linear 0s;
+  }
+
+  .slideItem {
+      min-height: 130px;
+      min-width: 100%;
+      width: 100%;
+      padding: 30px;
+      /* display: none; */
+  }
+
+  .slideItemContent {
+      display: flex;
+  }
+
+  .slideItemImg {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 20px;
+  }
+
+  .slideItemText {
+      margin: 6px 0 auto 20px;
+  }
+
+  .slideItemText h3 {
+      margin: 10px 0;
+      color: #333;
+  }
+
+  .slideItemText p {
+      color: #333;
+  }
+
+  /* định dạng các chấm chuyển đổi các slide */
+  .dots {
+      text-align: center;
+      margin: 10px 0;
+  }
+
+  .dot {
+      cursor: pointer;
+      height: 13px;
+      width: 13px;
+      margin: auto 2px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+      line-height: 15px;
+  }
+
+  .dot.active {
+      width: 15px;
+      height: 15px;
+      background-color: rgb(114, 179, 49);
+  }
+
+  /* Thêm hiệu ứng khi chuyển đổi các slide */
+  .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 3s;
+      animation-name: fade;
+      animation-duration: 3s;
+  }
+
+  @-webkit-keyframes fade {
+      from {
+          opacity: .4
+      }
+
+      to {
+          opacity: 1
+      }
+  }
+
+  @keyframes fade {
+      from {
+          opacity: .4
+      }
+
+      to {
+          opacity: 1
+      }
+  }

@@ -1,0 +1,286 @@
+.skills {
+    width: 100%;
+    background: var(--bg-color);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 32px;
+    overflow: hidden;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--title-color);
+    position: relative;
+    margin: 24px 0;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-image: linear-gradient( 142.17deg,#059e1f 6.66%,#a7ce1c 91.48%);
+    border-radius: 20px;
+    bottom: -6px;
+    left: 0;
+}
+
+.study {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.study p {
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.study span {
+    font-weight: 600; 
+}
+
+
+.levels {
+    max-width: 840px;
+    margin: 30px auto;
+    border: solid #fff 2px;
+    border-radius: 24px;
+    padding: 10px 20px;
+}
+
+.html5,
+.css3,
+.js,
+.reactjs,
+.tailwind {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 8px 0;
+}
+
+.html5 img {
+    width: 50px;
+    height: 56px;
+}
+
+.css3 img, .js img {
+    width: 42px;
+    margin: 0 4px;
+    height: 56px;
+}
+
+.reactjs img {
+    width: 50px;
+    height: 46px;
+    margin: auto 0;
+}
+
+.tailwind img {
+    width: 46px;
+    height: 46px;
+    margin: auto 3px;
+}
+
+/* Levels */
+.level {
+    max-width: 740px;
+    margin: auto 20px;
+}
+
+.infor {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0 8px;
+}
+
+.infor h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.process {
+    height: 24px;
+    background-color: #c8d6c6;
+    border-radius: 50px;
+}
+
+.coverProcessed {
+    height: 24px;
+    border-radius: 50px;
+    line-height: 32px;
+}
+
+.processed {
+    background: linear-gradient(135deg,#009fff, #ec2f4b);
+    height: 24px;
+    border-radius: 50px;
+    line-height: 32px;
+    /* animation: Processed 2s forwards; */
+}
+
+.animationProcess {
+    animation: Processed 2s forwards;
+}
+
+.processed span {
+    line-height: 24px;
+    display: block;
+    text-align: right;
+    margin-right: 6px;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+@keyframes Processed {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+/* UI/UX */
+.uiux {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto;
+}
+
+.itemChart {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+.itemChart p {
+    margin-top: 8px;
+}
+.logoFigma img {
+    width: 52px;
+    height: 74px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+}
+
+.logoPhotoshop img {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+}
+
+.piechart {
+    width: 240px;
+    height: 240px;
+    background-color: #FDEBD7;
+    display: block;
+    border-radius: 50%;
+    /* border: 2px solid #905700;    */
+    position: relative;
+}
+
+.piechart::before {
+    position: absolute;
+    content: "";
+    width: 116px;
+    height: 116px;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    border-radius: 50%;
+    background: var(--bg-color);
+    /* border: 2px solid #905700; */
+}
+
+.figma {
+    background-image: conic-gradient(
+            /* pink 70deg, */
+            orange 0 240deg,
+            #c4c4c4 200deg);
+}
+
+.photoshop {
+    background-image: conic-gradient(orange 0 200deg,
+            #c4c4c4 200deg);
+}
+
+/* Soft skills */
+.softskills {
+    position: relative;
+    margin: 80px auto;
+    color: #1297f2;
+    font-size: 32px;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+
+    border-bottom: 140px solid #F476FF;
+}
+
+.softskills p {
+    margin: auto 8px;
+}
+
+.teamwork {
+    display: flex;
+    position: absolute;
+    top: -70px;
+    left: -110px;
+}
+
+.teamwork img,
+.presentation img,
+.leadership img {
+    width: 70px;
+    height: 70px;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.presentation {
+    display: flex;
+    position: absolute;
+    bottom: -194px;
+    left: 100px;
+}
+
+.leadership {
+    display: flex;
+    position: absolute;
+    left: -346px;
+    bottom: -194px;
+}
+
+.softskill {
+    display: flex;
+    position: absolute;
+    font-size: 32px;
+    font-weight: 600;
+    color: yellow;
+    text-shadow: 2px 2px 4px #333;
+    top: 50px;
+    left: -48px;
+    text-align: center;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .7;
+    }
+}

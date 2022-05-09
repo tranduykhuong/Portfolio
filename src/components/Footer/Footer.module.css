@@ -1,0 +1,15 @@
+
+.footer {
+    margin: 50px 0 0 0;
+    background: var(--bg-color);
+    height: 30px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    line-height: 30px;
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: .8rem;
+}
