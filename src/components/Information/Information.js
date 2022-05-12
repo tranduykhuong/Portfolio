@@ -9,11 +9,13 @@ function Information() {
 
     return (
         <div className={classes.information + ' grid'}>
-            <div className="row no-gutters">
-                <div className={'col l-2 ' + classes.avatar}>
-                    <img className={classes.avatarImg} src="./img/avatar.png" alt="avatar" />
+            <div className={classes.infor + " row no-gutters"}>
+                <div className={classes.inforAvatar + ' col l-2 m-12 '}>
+                    <div className={classes.avatar}>
+                        <img className={classes.avatarImg} src="./img/avatar.png" alt="avatar" />
+                    </div>
                 </div>
-                <div className={"col l-4 " + classes.inforUser}>
+                <div className={"col l-4 m-12 " + classes.inforUser}>
                     <h2>Trần Duy Khương</h2>
                     <h3>Sinh viên</h3>
                     <div className={classes.icons}>
@@ -64,7 +66,7 @@ function Information() {
 
                 </div>
 
-                <div className="col l-6 ">
+                <div className="col l-6 m-12 ">
                     <div className={classes.inforContact}>
                         <ul className={classes.contactList}>
                             <li className={classes.contactItem}>

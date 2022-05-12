@@ -57,3 +57,11 @@
     background-color: #c23564;
     transition: all 0.3s ease;
 }
+
+
+/* Responsive */
+@media (max-width: 739px) {
+    .header {
+        display: none;
+    }
+}

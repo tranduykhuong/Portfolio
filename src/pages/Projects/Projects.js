@@ -1,13 +1,13 @@
 import React from "react";
 import Project from "./Project";
 import classes from './Projects.module.css'
-import styles from '../../components/Layout/Layout.module.css'
+import '../../grid.css'
 
 function Projects() {
     return (
         <div className={classes.projects}>
-            <div className={styles.row}>
-                <div className={styles.col + ' ' + styles.l5}>
+            <div className={classes.projectList + ' grid row no-gutters'}>
+                <div className='col l-6'>
                     <a href="https://slst-student.netlify.app/" target='_blank' rel="noopener noreferrer">
                         <Project
                             name='SLST - Share documents and test'
@@ -31,7 +31,7 @@ function Projects() {
                         />
                     </a>
                 </div>
-                <div className={styles.col + ' ' + styles.l5}>
+                <div className='col l-6'>
                     <a href="https://slst-student.netlify.app/" target='_blank' rel="noopener noreferrer">
                         <Project
                             name='SLST - Share documents and test'

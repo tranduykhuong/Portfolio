@@ -38,27 +38,27 @@ function Skills() {
             <div className={classes.levels}>
                 <div className={classes.html5} >
                     <img src="./img/html5.png" alt="HTML5" />
-                    <div style={{ flex: '1' }}><Level name='HTML5' percent='80' animation={LevelsAction} /></div>
+                    <div style={{ flex: '1' }}><Level name='HTML5' percent='75' animation={LevelsAction} /></div>
                 </div>
 
                 <div className={classes.css3} ref={topLevels}>
                     <img src="./img/css3.png" alt="css3" />
-                    <div style={{ flex: '1' }}><Level name='CSS3' percent='70' animation={LevelsAction} /></div>
+                    <div style={{ flex: '1' }}><Level name='CSS3' percent='65' animation={LevelsAction} /></div>
                 </div>
 
                 <div className={classes.js}>
                     <img src="./img/js.png" alt="js" />
-                    <div style={{ flex: '1' }}><Level name='JavaScript' percent='65' animation={LevelsAction} /></div>
+                    <div style={{ flex: '1' }}><Level name='JavaScript' percent='60' animation={LevelsAction} /></div>
                 </div>
 
                 <div className={classes.reactjs}>
                     <img src="./img/reactjs.png" alt="reactjs" />
-                    <div style={{ flex: '1' }}><Level name='ReactJS' percent='75' animation={LevelsAction} /></div>
+                    <div style={{ flex: '1' }}><Level name='ReactJS' percent='70' animation={LevelsAction} /></div>
                 </div>
 
                 <div className={classes.tailwind}>
                     <img src="./img/tailwind.png" alt="tailwind" />
-                    <div style={{ flex: '1' }}><Level name='TailwindCSS' percent='60' animation={LevelsAction} /></div>
+                    <div style={{ flex: '1' }}><Level name='TailwindCSS' percent='55' animation={LevelsAction} /></div>
                 </div>
             </div>
 
@@ -87,24 +87,39 @@ function Skills() {
             {/* Soft skills */}
             <div className={classes.title}>Kỹ năng mềm</div>
             <div className={classes.softskills}>
-                <div className={classes.softskill}>
-                    <p>Soft skills</p>
+                <div className={classes.softskillItem}>
+                    <div className={classes.teamwork}>
+                        <img src="./img/teamwork.png" alt="teamwork" />
+                        <h4>Teamwork</h4>
+                    </div>
+                    <p>Teamwork là một kỹ năng rất cần thiết trong cuộc sống nói chung và lĩnh vực Công nghệ
+                        thông tin nói riêng. Trong quá trình học tập và làm dự án, mình tích cực rèn luyện các
+                        phương pháp hoạt động nhóm sao cho hiệu quả và chất lượng.
+                    </p>
                 </div>
 
-                <div className={classes.teamwork}>
-                    <img src="./img/teamwork.png" alt="teamwork" />
-                    <p>Teamwork</p>
+                <div className={classes.softskillItem}>
+                    <div className={classes.presentation}>
+                        <img src="./img/presentation.png" alt="presentation" />
+                        <h4>Presentation</h4>
+                    </div>
+                    <p>Kỹ năng thuyết trình, trình bày là một trong những kỹ năng cần thiết trong mọi lĩnh vực. 
+                        May mắn, mình đã được tham gia các hoạt động Đoàn, Đội từ những năm Phổ thông nên bản thân
+                        đã rèn luyện được các yếu tố cần thiết và tự tin hơn khi đứng trước đám đông.
+                    </p>
                 </div>
 
-                <div className={classes.presentation}>
-                    <img src="./img/presentation.png" alt="presentation" />
-                    <p>Presentation</p>
+                <div className={classes.softskillItem}>
+                    <div className={classes.leadership}>
+                        <img src="./img/leadership.png" alt="leadership" />
+                        <h4>Leadership</h4>
+                    </div>
+                    <p>Trong quá trình học tập từ những năm Phổ thông, mình một lần nữa may mắn giữ chức vụ lớp 
+                        trưởng 9 năm nên đã tích lũy được một số kinh nghiệm nhất định trong quản lý tập thể. 
+                        Ở Đại học với sự nhiệt huyết, mình tích cực đóng vai trò Team Leader trong các project.
+                    </p>
                 </div>
 
-                <div className={classes.leadership}>
-                    <p>Leadership</p>
-                    <img src="./img/leadership.png" alt="leadership" />
-                </div>
             </div>
         </div>
     );

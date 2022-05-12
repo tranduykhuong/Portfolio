@@ -37,6 +37,7 @@
 
 .imgTVTS {
     width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 
@@ -52,13 +53,14 @@
 
 /* Contests */
 .contestItem {
-    color: var(--text-color);
-    margin: 0 32px;
+    color: var(--title-color);
+    margin: 0 8px 0 32px;
     padding-bottom: 16px;
     position: relative;
 }
 
 .contestItem p {
+    color: var(--text-color);
     line-height: 1.4rem;
     margin-top: 10px;
 }
@@ -82,4 +84,12 @@
     background-color: #999;
     left: -17px;
     top: 14px;
+}
+
+
+/* Mobile */
+@media (max-width: 739px) {
+    .extracurricular {
+        border-radius: 20px;
+    }
 }

@@ -5,6 +5,11 @@
     /* box-shadow: 4px 6px 4px #aaa; */
     padding: 40px 46px 40px 30px;
     overflow: hidden;
+    margin: 0 auto;
+}
+
+.projectList {
+    justify-content: center;
 }
 
 .projects a {
@@ -130,4 +135,20 @@
     font-size: 0.7rem;
     line-height: 20px;
     color: #fff;
+}
+
+
+@media (max-width: 739px) {
+    .projects {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .project {
+        margin-top: 116px;
+    }
+
+    .project img {
+        top: -90px;
+    }
 }

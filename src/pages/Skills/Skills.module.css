@@ -218,62 +218,44 @@
 
 /* Soft skills */
 .softskills {
-    position: relative;
-    margin: 80px auto;
-    color: #1297f2;
-    font-size: 32px;
-    width: 0;
-    height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
 
-    border-bottom: 140px solid #F476FF;
 }
 
-.softskills p {
-    margin: auto 8px;
+.softskillItem h4 {
+    color: var(--title-color);
+}
+
+.softskillItem p {
+    margin: 10px 10px 20px 30px;
+    color: var(--text-color);
+    line-height: 1.4rem;
+}
+
+.softskillItem h4 {
+    line-height: 40px;
+    margin-left: 10px;
 }
 
 .teamwork {
     display: flex;
-    position: absolute;
-    top: -70px;
-    left: -110px;
+}
+
+.presentation {
+    display: flex;
+}
+
+.leadership {
+    display: flex;
 }
 
 .teamwork img,
 .presentation img,
 .leadership img {
-    width: 70px;
-    height: 70px;
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    width: 40px;
+    height: 40px;
+    /* animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; */
 }
 
-.presentation {
-    display: flex;
-    position: absolute;
-    bottom: -194px;
-    left: 100px;
-}
-
-.leadership {
-    display: flex;
-    position: absolute;
-    left: -346px;
-    bottom: -194px;
-}
-
-.softskill {
-    display: flex;
-    position: absolute;
-    font-size: 32px;
-    font-weight: 600;
-    color: yellow;
-    text-shadow: 2px 2px 4px #333;
-    top: 50px;
-    left: -48px;
-    text-align: center;
-}
 
 @keyframes pulse {
     0%, 100% {
@@ -282,5 +264,23 @@
 
     50% {
         opacity: .7;
+    }
+}
+
+@media (max-width: 739px) {
+    .skills {
+        border-radius: 20px;
+    }
+
+    .uiux {
+        display: block;
+    }
+
+    .piechart {
+        margin: 0 auto;
+    }
+
+    .photoshop {
+        margin-top: 30px;
     }
 }

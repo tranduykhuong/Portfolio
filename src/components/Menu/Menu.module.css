@@ -6,6 +6,7 @@
     padding: 2px 0;
     text-align: center;
     top: 0;
+    justify-content: center;
 }
 
 .fixedMenu {
@@ -121,5 +122,38 @@
     }
     to {
         transform: skewX(-20deg) translateX(110%);
+    }
+}
+
+
+/* Responsive */
+@media (max-width: 739px) {
+    .menu {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        top: auto;
+        padding: 0 2px;
+        z-index: 100;
+    }
+
+    .item {
+        margin: 4px;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .menu {
+        display: flex;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top: auto;
+        padding: 0 2px;
+        z-index: 100;
+    }
+
+    .item {
+        margin: 4px;
     }
 }

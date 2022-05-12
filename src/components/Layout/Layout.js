@@ -5,6 +5,7 @@ import Header from "../Header/Header";
 import Information from "../Information/Information";
 import Menu from "../Menu/Menu";
 import '../../grid.css'
+import classes from './Layout.module.css'
 
 
 const Layout = (props) => {
@@ -22,7 +23,7 @@ const Layout = (props) => {
                     <div className='col l-2'>
                         <Menu path={location.toString()} />
                     </div>
-                    <div className='col l-10'>
+                    <div className='col l-10 m-12 t-12'>
                         <Header path={location.toString()} />
                         {props.children}
                     </div>
@@ -30,7 +31,7 @@ const Layout = (props) => {
                 </div>
             </div>
 
-            <div>
+            <div className={classes.footer}>
                 <Footer />
             </div>
         </div>

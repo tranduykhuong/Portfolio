@@ -48,7 +48,7 @@
 }
 
 .planItem {
-    margin: 0 32px;
+    margin: 0 8px 0 32px;
     padding-bottom: 16px;
     position: relative;
 }
@@ -92,4 +92,11 @@
 
 .quetos {
 
+}
+
+
+@media (max-width: 739px) {
+    .self {
+        border-radius: 20px;
+    }
 }

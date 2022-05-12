@@ -1,4 +1,5 @@
 .information {
+    position: relative;
     width: 100%;
     min-width: 206px;
     background: var(--bg-color);
@@ -56,18 +57,20 @@
 }
 
 .inforAvatar {
-    display: flex;
+    position: relative;
 }
 
 .avatar {
     position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 165px;
 }
 
 .avatarImg {
     width: 165px;
     height: 165px;
     border-radius: 50%;
-    position: relative;
 }
 
 .avatar::before {
@@ -88,9 +91,9 @@
 }
 
 .icons {
-    position: absolute;
+    margin-top: 50px;
     display: flex;
-    margin: 16px 20px 0;
+    margin: 50px 20px 0;
     bottom: 0;
 }
 
@@ -164,5 +167,50 @@
     to {
         opacity: 1;
         transform: translateY(-100%);
+    }
+}
+
+
+@media (max-width: 739px) {
+    
+    .inforUser {
+        border-right: none;
+        text-align: center;
+        padding-top: 110px;
+    }
+
+    .inforAvatar {
+        position: absolute;
+        left: 50%;
+        top: -8%;
+        transform: translateX(-50%);
+    }
+
+    .icons {
+        justify-content: space-evenly;
+        margin: 16px;
+    }
+
+    .inforContact {
+        display: block;
+    }
+
+    .contactList {
+        text-align: center;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .inforUser {
+        border-right: none;
+    }
+
+    .infor {
+        justify-content: center;
+    }
+
+    .inforContact {
+        margin-top: 20px;
+        /* text-align: center; */
     }
 }

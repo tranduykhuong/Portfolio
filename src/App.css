@@ -13,6 +13,7 @@
   padding-top: 50px;
   background: var(--background-color);
   position: relative;
+  overflow: hidden;
 }
 
 .app-content {
@@ -48,52 +49,52 @@
 .copos.c1 {
   font-size: 1.7em;
   left: 30%;
-  animation-duration: 10s;
+  animation-duration: 12s;
   color: #fff;
 }
 
 .copos.c2 {
   font-size: 1.2em;
   left: 40%;
-  animation-duration: 8s;
+  animation-duration: 13s;
 }
 
 .copos.c3 {
   font-size: 1.1em;
   left: 220px;
-  animation-duration: 8s;
+  animation-duration: 12s;
 }
 
 .copos.c4 {
   font-size: 1.5em;
   left: 60%;
-  animation-duration: 6s;
+  animation-duration: 10s;
   color: #fff;
 }
 
 .copos.c5 {
   font-size: 1em;
   left: 70%;
-  animation-duration: 7s;
+  animation-duration: 14s;
 }
 
 .copos.c6 {
   font-size: .9em;
   left: 80%;
-  animation-duration: 5s;
+  animation-duration: 12s;
 }
 
 .copos.c7 {
   font-size: 2em;
   right: 90%;
-  animation-duration: 10s;
+  animation-duration: 8s;
   color: #fff;
 }
 
 .copos.c8 {
   font-size: 1em;
   left: 85%;
-  animation-duration: 7s;
+  animation-duration: 11s;
 }
 
 @keyframes nieve {
@@ -102,7 +103,7 @@
   }
 
   to {
-    top: 1000px;
+    top: 2200px;
   }
 }
 
@@ -205,4 +206,8 @@
   100% {
     transform: translateY(0);
   }
+}
+
+@media (max-width: 739px) {
+  
 }
