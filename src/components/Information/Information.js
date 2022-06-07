@@ -81,6 +81,25 @@ function Information() {
                 <span>GitHub</span>
               </div>
             </a>
+            <a
+              href="./CV/Resume.pdf"
+              download
+              rel="noreferrer"
+              className={classes.iconResume}
+              onMouseOver={() => setIdxHover(4)}
+              onMouseOut={() => setIdxHover(0)}
+            >
+              CV
+              <div
+                className={
+                  classes.iconHoverName +
+                  " " +
+                  (idxHover === 4 ? classes.nonHidden : "")
+                }
+              >
+                <span>Resume</span>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -99,7 +118,7 @@ function Information() {
             <ul className={classes.contactList}>
               <li className={classes.contactItem}>
                 <span className={classes.itemTitle}>Số điện thoại</span>
-                082 *** 4789
+                082 470 4789
               </li>
               <li className={classes.contactItem}>
                 <span className={classes.itemTitle}>Địa chỉ</span>

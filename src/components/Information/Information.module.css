@@ -139,6 +139,25 @@
     border-color: rgb(43, 32, 145) transparent transparent transparent;
 }
 
+.iconResume {
+    display: block;
+    position: relative;
+    font-weight: 700;
+    background-color: rgb(199, 48, 98);
+    color: #fff;
+    width: 2.7rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.4rem;
+    text-decoration: none;
+    margin: 0 8px;
+    border: 2px solid #5f9aed;
+}
+
+.iconResume:hover {
+    border: 2px solid aqua;
+}
+
 .nonHidden {
     display: block;
     animation: FadeIn .3s forwards;
@@ -172,7 +191,7 @@
 
 
 @media (max-width: 739px) {
-    
+
     .inforUser {
         border-right: none;
         text-align: center;
